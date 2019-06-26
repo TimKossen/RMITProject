@@ -1,0 +1,331 @@
+html,
+body
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color:  #FFFAFA;
+  color: #333300;
+  font-family: arial, sans-serif;
+  margin: 0;
+  text-align: center;
+
+}
+
+#logo{
+    height: 95%;
+    filter: none;
+    text-shadow: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+header {
+  font-size: 10%;
+  margin: 0px;
+  font-weight: bold;
+  height: 65px;
+  background-color: #333300;
+  padding-bottom: 2px;
+  vertical-align: middle;
+}
+
+
+nav, footer{
+  font-size: 105%;
+  font-weight: bold;
+  border: 5px solid #333300;
+  padding: 8px;
+
+}
+
+footer{
+  background-color: #333300;
+  margin:below: 0;
+  border: 5px solid #333300;
+  color:  #FFFAFA;
+
+}
+
+
+a{
+    text-decoration: none;
+    margin-right: 5%;
+    text-shadow: 1px 1px #D3D3D3;
+}
+
+
+a:link {
+    color: #333300;
+}
+
+
+a:visited {
+    color: #551A8B;
+    text-shadow: none;
+}
+
+
+a:hover {
+    color: #D3D3D3;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+
+
+/* collapsible nav bar for screens of less than 800px width */
+
+topnav{
+    border-color:  	#333300;
+    text-align: left;
+}
+
+/* ensures mobile menu is collapsed by default */
+.topnav #moblinks{
+  display: none;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  border: 2px solid #333300;
+  border-color: black;
+  width: 100%;
+}
+
+h1{
+    font-size: 300%;
+    text-shadow: 1px 1px #D3D3D3;
+}
+
+/* main content */
+ main
+form{
+    padding: 10px;
+    font-weight: bold;
+}
+
+#login{
+    color: #333300;
+}
+
+#type{
+    font-style: italic;
+}
+
+#ORDER{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+select, option, input{
+    color: #FFFAFA;
+    font-size:100%;
+}
+
+button, select, option, input{
+    background-color: #333300;
+}
+
+
+button{
+    min-width: 250px;
+    margin: 4px;
+    width: 35%;
+    display: inline-block;
+    position: relative;
+    color: #FFFAFA;
+
+}
+
+select, option, input, button, form{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    appearance: none;
+}
+
+/* 'hamburger' button */
+#mbutton{
+    border: 5px;
+    color: #333300;
+     font-size: 25px;
+     float: left;
+}
+
+/*prices for products in grid on products.php */
+#prices {
+color: red;
+font-weight:italic;
+font-size: 125%;
+}
+
+
+/* images for products in grid on products.php */
+#img{
+    height: 200px;
+    width:200px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+/* block containing 'cart' on product.php */
+
+#cart{
+    background-color:  #333300;
+}
+
+/* text space on 'cart' */
+#count{
+    width: 20px;
+}
+
+/*discounted price product.php */
+#slashed{
+text-decoration: line-through;
+font-size: 200%;
+}
+
+/* values on 'cart' on product.php */
+#dollar, #payval, #Kg, #kgval{
+    color: #FFFAFA;
+
+}
+
+#dollar, #payval{
+font-style: italic;
+}
+
+
+#Kg, #kgval{
+    font-weight: bold;
+}
+
+
+#save, #saveval, #slashed{
+    color: red;
+    font-style: italic;
+}
+
+
+
+#values{
+    font-size: 200%;
+    background-color: #333300;
+}
+
+
+/* end of 'cart' */
+
+/*text blocks on index.php and product.php */
+#c1, #c{
+    font-size: 350%;
+    font-style: italic;
+
+}
+
+
+/* specifications for different screen sizes */
+
+
+/* small screens */
+@media only screen
+and (max-width: 600px){
+#h1product, #slashed{
+    font-size: 150%;
+}
+
+/* image index.php */
+#info{
+    width: 100%;
+}
+
+
+/* image for 'cart' on product.php */
+#dealimg{
+width: 95%;
+}
+
+
+/* ensures only the mobile menu appears */
+nav
+{
+  display: none;
+}
+
+}
+
+/* ensures logo isn't squashed in portrait form */
+@media only screen
+and (max-width: 600px)
+and (orientation: portrait){
+    #logo{
+        width: 70%;
+    }
+
+}
+
+@media only screen
+and (min-width: 601px)
+and (max-width: 800px){
+
+
+/* ensures only the mobile menu appears */
+nav
+{
+  display: none;
+}
+
+}
+
+@media only screen
+and (min-width: 800px){
+
+#info{
+    position: relative;
+    float: left;
+    left: 10%;
+}
+
+#h1index{
+    font-size: 400%;
+}
+
+/* ensures mobile menu does nto display */
+#mobilemenu, #mbutton{
+    display: none;
+}
+
+}
+
+
+/* Wireframe toggle button */
+#toggleWireframeCSS {
+  position: fixed;
+  top: 220px;
+  right: 0px;
+  width: 0px;
+  height: 20px;
+  font-size: 10px;
+  opacity: 0.5;
+
+}
+#toggleWireframeCSS:hover {
+  opacity: 1;
+}
